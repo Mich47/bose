@@ -1,0 +1,25 @@
+.features {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.features__text {
+  display: flex;
+
+  &::before {
+    content: '';
+    position: relative;
+    top: 2px;
+    left: 0;
+    display: inline-block;
+    margin-right: 24px;
+    flex-shrink: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--btn-background-color);
+  }
+}

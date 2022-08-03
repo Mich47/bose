@@ -13,11 +13,14 @@
 @import './base/grid';
 
 // Components
+@import './components/marker';
+@import './components/paragraph';
 @import './components/backdrop';
 @import './components/button';
 @import './components/checkbox';
 @import './components/container';
 @import './components/navigation';
+@import './components/quote';
 @import './components/form';
 @import './components/modal';
 @import './components/project-card';
@@ -28,6 +31,7 @@
 @import './layouts/header';
 @import './layouts/footer';
 @import './layouts/hero';
+@import './layouts/features';
 
 // Hidden
 @import './utils/hidden';

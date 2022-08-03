@@ -1,0 +1,13 @@
+.quote {
+  &__text {
+    &::before {
+      content: '';
+      display: block;
+      background-image: url('../images/history/mob/img2.jpg');
+      width: 34px;
+      height: 25px;
+    }
+  }
+  &__author {
+  }
+}

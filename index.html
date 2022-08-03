@@ -26,7 +26,7 @@
 
 
             <!-- Mobile menu -->
-            <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <div class="mobile-menu js-menu-container is-hidden" id="mobile-menu">
                 <button class="mobile-menu__close-btn" type="button" title="Close" data-menu-open>
                     <svg class="icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-close"></use>
@@ -64,152 +64,186 @@
     <!-- Main -->
     <main>
         <!-- Hero -->
-        <section class="section">
-            <div class="container">
-                <div class="wrapper">
-                    <p class="text">Наушники с шумоподавлением, которые способны на многое</p>
-                    <p class="text">До 20 часов воспроизведения</p>
+        <section class="section hero">
+            <div class="container container--mobile">
+                <div class="hero__wrapper">
+                    <p class="text hero__text">Наушники с шумоподавлением, <br>которые способны на многое</p>
+                    <p class="text hero__text">До 20 часов <br>воспроизведения</p>
                 </div>
-                <div class="wrapper">
-                    <h1 class="title hero__title">Наушники Bose NC 700</h1>
-                    <a href="#">Заказать</a>
-                </div>
-                <img src="./images/hero/mob/img.jpg" alt="">
+                <h1 class="title hero__title">Наушники Bose NC 700</h1>
+                <a class="link button" href="#">Заказать</a>
+                <!-- <div class="hero__wrapper">
+                </div> -->
+                <img src="./images/hero/mob/img.jpg" alt="Наушники Bose NC 700">
 
             </div>
         </section>
 
         <!-- Design Section -->
         <section class="section">
-            <div class="container">
-                <img src="./images/designe/mob/img.jpg" alt="">
-                <div class="wrapper">
-                    <h2 class="title">Премиальный дизайн и комфорт</h2>
-                    <h3 class="subtitle">11 уровней шумоподавления</h3>
-                    <p class="text">С новыми наушниками Bose Noise Cancelling Headphone 700 можно плавно увеличить или
-                        уменьшить
-                        уровень шумоподавления. Вас
-                        слышно отлично и вы слышите собеседника четко, даже в шумной обстановке!</p>
-                    <h3 class="subtitle">Комфорт на максимум</h3>
-                    <p class="text">Стильная, легкая дужка из нержавеющей стали с мягкими, расположенными под углом
-                        чашками наушников
-                        для комфортной
-                        посадки. Внутренняя сторона выполнена из мягкой гелевой подкладки, которая хорошо прилегает к
-                        голове.</p>
+            <div class="container container--mobile">
+                <div class="container__item">
+                    <h2 class="title container__title">Премиальный дизайн и комфорт</h2>
+                    <div class="paragraph">
+                        <h3 class="subtitle">11 уровней шумоподавления</h3>
+                        <p class="text">С новыми наушниками Bose Noise Cancelling Headphone 700 можно плавно увеличить
+                            или уменьшить уровень шумоподавления. Вас слышно отлично и вы слышите собеседника четко,
+                            даже в шумной обстановке!</p>
+                    </div>
+                    <div class="paragraph">
+                        <h3 class="subtitle">Комфорт на максимум</h3>
+                        <p class="text">Стильная, легкая дужка из нержавеющей стали с мягкими, расположенными под углом
+                            чашками наушников для комфортной посадки. Внутренняя сторона выполнена из мягкой гелевой
+                            подкладки, которая хорошо прилегает к голове.</p>
+                    </div>
+                </div>
+                <div class="container__item">
+                    <img src="./images/designe/mob/img.jpg" alt="">
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section class="section">
-            <div class="container">
-                <h2 class="title">Способны на многое</h2>
-                <ul class="list">
-                    <li>
-                        <p class="text"> Возможность принимать звонки</p>
-                    </li>
-                    <li>
-                        <p class="text"> Непревзойденная система микрофонов</p>
-                    </li>
-                    <li>
-                        <p class="text"> Насыщенное и мощное звучание</p>
-                    </li>
-                    <li>
-                        <p class="text"> Поддержка голосовых помощников</p>
-                    </li>
-                    <li>
-                        <p class="text"> Опция активного шумоподавления</p>
-                    </li>
-                    <li>
-                        <p class="text">Аудиоплатформа дополненной реальности Bose AR</p>
-                    </li>
-                </ul>
+        <section class="section features">
+            <div class="container container--mobile">
+                <div class="container__item">
+                    <h2 class="title container__title">Способны на многое</h2>
+                    <ul class="list features__list">
+                        <li class="features__item">
+                            <p class="text features__text">Возможность принимать звонки</p>
+                        </li>
+                        <li class="features__item">
+                            <p class="text features__text">Непревзойденная система микрофонов</p>
+                        </li>
+                        <li class="features__item">
+                            <p class="text features__text">Насыщенное и мощное звучание</p>
+                        </li>
+                        <li class="features__item">
+                            <p class="text features__text">Поддержка голосовых помощников</p>
+                        </li>
+                        <li class="features__item">
+                            <p class="text features__text">Опция активного шумоподавления</p>
+                        </li>
+                        <li class="features__item">
+                            <p class="text features__text">Аудиоплатформа дополненной реальности Bose AR</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- Promo Section -->
         <section class="section">
-            <div class="container">
+            <div class="container container--mobile">
                 <h2 class="title">Роскошь тишины</h2>
-                <div class="wrapper">
-                    <h3 class="subtitle">Максимальное наслаждение</h3>
-                    <p class="text">Для того чтобы создать комфортную атмосферу — поднимайте уровень за уровнем от
-                        "прозрачного"
-                        режима до максимального
-                        блокирования звуков. Режим разговора можно активировать в один клик с помощью специальной
-                        кнопки.</p>
-                    <h3 class="subtitle">Хрустальный звук</h3>
-                    <p class="text">Система динамиков и фирменный активный эквалайзер способны обеспечить качественный и
-                        мощный звук
-                        на любом уровне
-                        громкости. Вы можете быть уверены в отсутствии искажений и кристальной чистоте высоких и низких
-                        частот.
-                    </p>
+                <img src="./images/promo/mob/img.jpg" alt="">
+                <div class="container__item">
+                    <div class="paragraph">
+                        <h3 class="subtitle">Максимальное наслаждение</h3>
+                        <p class="text">Для того чтобы создать комфортную атмосферу — поднимайте уровень за уровнем от
+                            "прозрачного"
+                            режима до максимального
+                            блокирования звуков. Режим разговора можно активировать в один клик с помощью специальной
+                            кнопки.</p>
+                    </div>
+                    <div class="paragraph">
+                        <h3 class="subtitle">Хрустальный звук</h3>
+                        <p class="text">Система динамиков и фирменный активный эквалайзер способны обеспечить
+                            качественный и
+                            мощный звук
+                            на любом уровне
+                            громкости. Вы можете быть уверены в отсутствии искажений и кристальной чистоте высоких и
+                            низких
+                            частот.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Technology Section -->
         <section class="section">
-            <div class="container">
+            <div class="container container--mobile">
                 <h2 class="title">Bose AR</h2>
-                <h3 class="subtitle">Фирменная технология</h3>
-                <p class="text">Bose AR — это уникальная аудиоплатформа дополненной реальности, что открывает перед вами
-                    новые грани
-                    звучания. Она
-                    позволяет вам оставаться на связи с реальным миром и одновременно погружаться в виртуальную
-                    вселенную.
-                </p>
+                <div class="paragraph">
+                    <h3 class="subtitle">Фирменная технология</h3>
+                    <p class="text">Bose AR — это уникальная аудиоплатформа дополненной реальности, что открывает перед
+                        вами
+                        новые грани
+                        звучания. Она
+                        позволяет вам оставаться на связи с реальным миром и одновременно погружаться в виртуальную
+                        вселенную.
+                    </p>
+                </div>
                 <img src="./images/technology/mob/img.jpg" alt="">
             </div>
         </section>
 
         <!-- Warranty Section-->
         <section class="section">
-            <div class="container">
+            <div class="container container--mobile">
                 <h2 class="title">Гарантии</h2>
-                <h3 class="subtitle">Гарантия возврата денег в течение 90 дней</h3>
-                <p class="text">Если вы не удовлетворены продуктом на 100% вы можете вернуть его обратно и получить
-                    полный возврат
-                    денег
-                </p>
-                <h3 class="title">1 год гарантии</h3>
-                <p class="text">Вне зависимости от страны вашего проживания, если ваши наушники сломались, мы вышлем вам
-                    новые
-                </p>
+                <div class="container__item">
+                    <span class="marker"></span>
+                    <div class="paragraph">
+                        <h3 class="subtitle">Гарантия возврата денег в течение 90 дней</h3>
+                        <p class="text">Если вы не удовлетворены продуктом на 100% вы можете вернуть его обратно и
+                            получить
+                            полный возврат
+                            денег
+                        </p>
+                    </div>
+                    <span class="marker"></span>
+                    <div class="paragraph">
+                        <h3 class="title">1 год гарантии</h3>
+                        <p class="text">Вне зависимости от страны вашего проживания, если ваши наушники сломались, мы
+                            вышлем
+                            вам
+                            новые
+                        </p>
+                    </div>
+                </div>
                 <img src="./images/warranty/mob/img1.jpg" alt="">
             </div>
         </section>
 
         <!-- History Section-->
         <section class="section">
-            <div class="container">
+            <div class="container container--mobile">
                 <h2 class="title">История создания бренда</h2>
-                <p class="text">История Bose Corporation началась с разочарования. В 1956 году аспирант Массачусетского
-                    технологического института Амар
-                    Боуз (Amar Bose) приобрёл одну из лучших по тем временам стереосистем для своего дома.
-                    После нескольких минут прослушивания аудиозаписи его недоумение сменилось разочарованием.</p>
-                <p class="text">С точки зрения Амара звук был настолько плоским и неестественным, что лучше не слушать
-                    музыку вовсе,
-                    чем слушать её в
-                    столь искажённом виде.</p>
-                <img src="./images/history/mob/img.jpg" alt="">
-                <p class="text">Разочарование Боуза переросло в твёрдую решимость – создавать аудиотехнику, которая
-                    будет передавать
-                    звук безупречно
-                    точно и естественно.</p>
-                <article>
-                    <img src="./images/history-article/mob/img.jpg" alt="">
-                    <h3 class="subtitle">Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и думайте о том, как
-                        этого достичь.
-                    </h3>
-                    <span>Основатель компании Амар Боуз</span>
-                </article>
+                <div class="paragraph">
+                    <p class="text">История Bose Corporation началась с разочарования. В 1956 году аспирант
+                        Массачусетского
+                        технологического института Амар
+                        Боуз (Amar Bose) приобрёл одну из лучших по тем временам стереосистем для своего дома.
+                        После нескольких минут прослушивания аудиозаписи его недоумение сменилось разочарованием.</p>
+                </div>
+                <img src="./images/history/mob/img1.jpg" alt="">
+                <div class="paragraph">
+                    <p class="text">С точки зрения Амара звук был настолько плоским и неестественным, что лучше не
+                        слушать
+                        музыку вовсе,
+                        чем слушать её в
+                        столь искажённом виде.</p>
+                    <p class="text">Разочарование Боуза переросло в твёрдую решимость – создавать аудиотехнику, которая
+                        будет передавать
+                        звук безупречно
+                        точно и естественно.</p>
+                </div>
+                <img src="./images/history/mob/img2.jpg" alt="">
+
+                <figure>
+                    <blockquote class="quote">
+                        <p class="subtitle quote__text">Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и
+                            думайте о том, как этого достичь.</p>
+                    </blockquote>
+                    <figcaption class="quote__author">Основатель компании <cite>Амар Боуз</cite></figcaption>
+                </figure>
             </div>
         </section>
 
         <!-- Overviews Section-->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <video src=""></video>
                 <h2>Обзоры</h2>
@@ -227,10 +261,10 @@
                     <li></li>
                 </ol>
             </div>
-        </section>
+        </section> -->
 
         <!-- FAQ Section-->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="title">FAQ</h2>
                 <ol class="list">
@@ -252,10 +286,10 @@
                     </li>
                 </ol>
             </div>
-        </section>
+        </section> -->
 
         <!-- Order Section -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="title">Bose nc 700</h2>
                 <form action="">
@@ -268,17 +302,17 @@
                     <button type="submit">Заказать</button>
                 </form>
             </div>
-        </section>
+        </section> -->
 
         <!--  Usage Section -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="title" hidden>Женщина в наушниках</h2>
             </div>
-        </section>
+        </section> -->
 
         <!-- Feedback Section -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="title">Обратная связь</h2>
                 <form action="">
@@ -290,11 +324,11 @@
                     <button type="submit">Отправить</button>
                 </form>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
         <div class="container">
             <ul class="list">
                 <li>Характеристики</li>
@@ -307,7 +341,7 @@
             <a href="tel:+88001111111">
                 +8 (800) 111-11-11</a>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
