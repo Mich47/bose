@@ -12,12 +12,12 @@
   justify-content: space-between;
   padding: 15px;
 
-  background-color: var(--main-light-color);
+  background-color: var(--main-background-color);
 
-  transform: translateY(-100%);
+  // transform: translateY(-100%);
   transition: transform var(--animation);
 
-  @include mq(tab) {
+  @include mq(desk) {
     display: none;
   }
 

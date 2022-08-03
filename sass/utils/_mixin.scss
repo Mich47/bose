@@ -1,6 +1,6 @@
 //Section Padding Top and Bottom
 
-$default-sec-pad: 94px;
+$default-sec-pad: 26px;
 @mixin section($p-top: $default-sec-pad, $p-bot: $p-top) {
   @if $p-top == default {
     padding-top: $default-sec-pad;
@@ -15,9 +15,8 @@ $default-sec-pad: 94px;
   }
 
   margin: 0 auto;
-  // min-width: 320px;
-  // max-width: 480px;
-  //outline: 2px solid tomato;
+
+  outline: 2px solid tomato;
 }
 
 // Media Queries

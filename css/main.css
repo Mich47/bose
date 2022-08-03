@@ -425,40 +425,13 @@ summary {
 
 :root {
   --main-font: "Gilroy", sans-serif;
-  --logo-font: "Raleway", sans-serif;
-  --logo-font-dark: #000;
-  --main-font-color: #212121;
-  --second-font-color: #757575;
-  --main-light-color: #fff;
-  --main-accent-color: #2196f3;
-  --social-link-color: #afb1b8;
-  --address-link-color: rgb(255 255 255 / 0.6);
-  --section-background-color: #f5f4fa;
-  --footer-background-color: #2f303a;
-  --footer-background-social: rgb(255 255 255 / 0.1);
-  --backdrop-background: rgb(0 0 0 / 0.2);
-  --btn-background-color: var(--main-accent-color);
-  --btn-background-hover: #188ce8;
-  --btn-box-shadow: 0px 4px 4px rgb(0 0 0 / 0.15);
-  --header-border-color: #ececec;
-  --hero-gradient-color: rgb(47 48 58 / 0.4);
-  --project-border-color: #eee;
-  --project-background-overlay: rgb(33 150 243 / 0.9);
-  --project-item-box-shadow: 0px 1px 1px rgb(0 0 0 / 0.12), 0px 4px 4px rgb(0 0 0 / 0.06),
-    1px 4px 6px rgb(0 0 0 / 0.16);
-  --product-subtitle-background: rgb(47 48 58 / 0.8);
-  --team-box-shadow: 0px 1px 3px rgb(0 0 0 / 0.12), 0px 1px 1px rgb(0 0 0 / 0.14),
-    0px 2px 1px rgb(0 0 0 / 0.2);
-  --team-border-radius: 0px 0px 4px 4px;
-  --subscribe-form-input-color: rgb(255 255 255 / 0.6);
-  --subscribe-form-input-border-color: rgb(255 255 255 / 0.3);
-  --filter-btn-box-shadow: 0px 3px 1px rgb(0 0 0 / 0.1), 0px 1px 2px rgb(0 0 0 / 0.08),
-    0px 2px 2px rgb(0 0 0 / 0.12);
-  --modal-box-shadow: var(--team-box-shadow);
-  --modal-close-btn-border-color: rgb(0 0 0 / 0.1);
-  --modal-close-btn-box-shadow: 0 0px 2px 0 rgb(60 64 67 / 0.3), 0 0px 6px 3px rgb(60 64 67 / 0.15);
-  --modal-form-input-border-color: rgb(33 33 33 / 0.2);
-  --modal-form-placeholder-color: rgb(117 117 117 / 0.5);
+  --second-font: "Roboto", sans-serif;
+  --main-font-color: rgb(255 255 255 / 0.8);
+  --second-font-color: #e7e7e7;
+  --main-background-color: #191919;
+  --btn-font-main-color: rgb(255 255 255 / 0.9);
+  --btn-background-color: #df3d3a;
+  --btn-background-hover: #b5302d;
   /* Grid setting */
   --grid-items: 1;
   --grid-indent: 30px;
@@ -474,6 +447,7 @@ html {
 body {
   font-family: var(--main-font);
   color: var(--main-font-color);
+  background-color: var(--main-background-color);
 }
 
 .no-scroll {
@@ -517,21 +491,28 @@ img {
 
 /* Title Styles */
 .title {
-  font-size: 28px;
-  line-height: 1.17;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  /* or 29px */
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--second-font-color);
 }
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 36px;
-  }
-}
-
 /* Subtitle Styles */
 .subtitle {
-  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.25;
+  /* identical to box height, or 25px */
+  font-weight: 600;
+  color: var(--second-font-color);
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.25;
+  /* or 18px */
+  color: var(--main-font-color);
 }
 
 /* Grid Styles */
@@ -564,14 +545,15 @@ img {
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
-  min-width: 200px;
-  font-weight: 700;
+  min-width: 280px;
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--main-light-color);
+  line-height: 19px;
+  /* identical to box height */
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--btn-font-main-color);
   background-color: var(--btn-background-color);
-  border-radius: 4px;
   border: 0;
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
@@ -641,7 +623,8 @@ img {
   min-width: 320px;
   max-width: 480px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
+  outline: 1px solid blue;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -993,11 +976,10 @@ img {
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
-  background-color: var(--main-light-color);
-  transform: translateY(-100%);
+  background-color: var(--main-background-color);
   transition: transform var(--animation);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
   }
@@ -1046,10 +1028,11 @@ img {
 /* Header Styles */
 .header {
   margin: 0 auto;
+  outline: 2px solid tomato;
   border-bottom: 1px solid var(--header-border-color);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .header__container {
     padding: 16px 15px;
     justify-content: space-between;
@@ -1057,9 +1040,11 @@ img {
 }
 
 .header__wrapper {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header__wrapper {
     width: 100%;
     margin-left: 93px;
@@ -1083,18 +1068,19 @@ img {
   }
 }
 
-.header__burger-btn {
+.header__hamburger-btn {
+  min-width: 20px;
+  padding: 0;
   background-color: transparent;
-  border: none;
   cursor: pointer;
   transition: color var(--animation);
 }
-@media screen and (min-width: 768px) {
-  .header__burger-btn {
+@media screen and (min-width: 1200px) {
+  .header__hamburger-btn {
     display: none;
   }
 }
-.header__burger-btn:hover, .header__burger-btn:focus {
+.header__hamburger-btn:hover, .header__hamburger-btn:focus {
   color: var(--main-accent-color);
 }
 
@@ -1103,6 +1089,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
+  outline: 2px solid tomato;
   background-color: var(--footer-background-color);
 }
 
@@ -1187,6 +1174,16 @@ img {
 }
 .footer__form-input::placeholder {
   color: var(--subscribe-form-input-color);
+}
+
+.hero {
+  margin-top: 1px;
+}
+
+.hero__title {
+  font-size: 34px;
+  line-height: 1;
+  /* or 34px */
 }
 
 .visually-hidden {

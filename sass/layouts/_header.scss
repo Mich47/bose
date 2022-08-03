@@ -7,16 +7,18 @@
 }
 
 .header__container {
-  @include mq(mob-only) {
+  @include mq(tab) {
     padding: 16px 15px;
     justify-content: space-between;
   }
 }
 
 .header__wrapper {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  @include mq(tab) {
+  @include mq(desk) {
     width: 100%;
     margin-left: 93px;
     display: flex;
@@ -40,14 +42,16 @@
   }
 }
 
-.header__burger-btn {
+.header__hamburger-btn {
+  min-width: 20px;
+  padding: 0;
   background-color: transparent;
-  border: none;
+  // border: none;
   cursor: pointer;
 
   transition: color var(--animation);
 
-  @include mq(tab) {
+  @include mq(desk) {
     display: none;
   }
 
