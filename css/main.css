@@ -146,29 +146,13 @@
   src: url("../fonts/roboto-v30-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto") format("svg"); /* Legacy iOS */
 }
-/* roboto-500 - latin_cyrillic */
+/* roboto-condensed-regular - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/roboto-v30-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-500.svg#Roboto") format("svg"); /* Legacy iOS */
-}
-/* roboto-700 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-v30-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-700.svg#Roboto") format("svg"); /* Legacy iOS */
-}
-/* roboto-900 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/roboto-v30-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-condensed-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-condensed-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-condensed-v25-latin_cyrillic-regular.svg#RobotoCondensed") format("svg"); /* Legacy iOS */
 }
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
@@ -425,7 +409,8 @@ summary {
 
 :root {
   --main-font: "Gilroy", sans-serif;
-  --second-font: "Roboto", sans-serif;
+  --second-font: "Roboto Condensed", sans-serif;
+  --third-font: "Roboto", sans-serif;
   --main-font-color: rgb(255 255 255 / 0.8);
   --second-font-color: #e7e7e7;
   --main-background-color: #191919;
@@ -461,7 +446,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+figure,
+blockquote {
   margin: 0;
 }
 
@@ -722,10 +709,20 @@ img {
 .quote__text::before {
   content: "";
   display: block;
-  background-image: url("../images/history/mob/img2.jpg");
+  background-image: url("../images/history/quotation-marks.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
   width: 34px;
   height: 25px;
 }
+.quote__author {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.quote__cite {
+  font-style: normal;
+}
+
 /* Form Styles */
 .form__input, .form__label {
   display: block;
@@ -1251,6 +1248,38 @@ img {
   height: 13px;
   border-radius: 50%;
   background-color: var(--btn-background-color);
+}
+
+.overviews__subtitle {
+  color: var(--btn-background-color);
+}
+
+.overviews__item {
+  font-family: var(--second-font);
+  font-size: 20px;
+  line-height: 1.25;
+  opacity: 0.2;
+  color: var(--btn-background-color);
+}
+.overviews__item:hover, .overviews__item:focus {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overviews__item--active {
+  opacity: 1;
+}
+
+.overviews__item:not(:last-child) {
+  margin-right: 16px;
+}
+.overviews__item:not(:last-child)::after {
+  content: "-";
+  margin-left: 16px;
+}
+
+.faq__list {
+  flex-direction: column;
 }
 
 .visually-hidden {

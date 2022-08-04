@@ -1,0 +1,31 @@
+.overviews {
+  &__subtitle {
+    color: var(--btn-background-color);
+  }
+}
+
+.overviews__item {
+  font-family: var(--second-font);
+  font-size: 20px;
+  line-height: 1.25;
+  opacity: 0.2;
+  color: var(--btn-background-color);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.overviews__item--active {
+  opacity: 1;
+}
+
+.overviews__item:not(:last-child) {
+  margin-right: 16px;
+  &::after {
+    content: '-';
+    margin-left: 16px;
+  }
+}

@@ -1,13 +1,22 @@
+$author-color: rgb(255 255 255 / 0.4);
 .quote {
   &__text {
     &::before {
       content: '';
       display: block;
-      background-image: url('../images/history/mob/img2.jpg');
+      background-image: url('../images/history/quotation-marks.svg');
+      background-repeat: no-repeat;
+      margin-bottom: 24px;
       width: 34px;
       height: 25px;
     }
   }
   &__author {
+    margin-top: 16px;
+    color: $author-color;
+  }
+
+  &__cite {
+    font-style: normal;
   }
 }
