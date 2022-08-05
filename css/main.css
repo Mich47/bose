@@ -467,6 +467,7 @@ img {
 
 .icon {
   fill: currentColor;
+  stroke: currentColor;
 }
 
 .link {
@@ -549,6 +550,7 @@ img {
   gap: 10px;
   padding: 10px 20px;
   min-width: 280px;
+  min-height: 58px;
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
@@ -731,10 +733,6 @@ img {
   letter-spacing: 0.01em;
   text-align: left;
   color: var(--second-font-color);
-}
-
-.form {
-  text-align: center;
 }
 
 .form__group {
@@ -1060,6 +1058,23 @@ img {
   pointer-events: initial;
 }
 
+.line {
+  display: block;
+  height: 2px;
+  opacity: 0.1;
+  background-color: var(--main-font-color);
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  /* identical to box height, or 29px */
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--btn-background-color);
+}
+
 /* Header Styles */
 .header {
   margin: 0 auto;
@@ -1279,7 +1294,67 @@ img {
 }
 
 .faq__list {
+  counter-reset: num;
   flex-direction: column;
+}
+
+.faq__text {
+  cursor: pointer;
+  display: flex;
+  justify-content: baseline;
+}
+.faq__text::before, .faq__text::after {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.7;
+  /* identical to box height, or 14px */
+  color: var(--second-font-color);
+}
+.faq__text::before {
+  counter-increment: num;
+  content: counter(num, decimal-leading-zero);
+  margin-right: 16px;
+}
+.faq__text::after {
+  content: "?";
+  margin-left: 12px;
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.order__link {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order__icon {
+  color: var(--btn-background-color);
+}
+
+.order__price {
+  margin-top: 8px;
+}
+
+.usage__container {
+  align-items: center;
+}
+
+.usage__image {
+  min-width: 280px;
+  min-height: 235px;
+  background-image: url("../images/usage/mob/img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .visually-hidden {

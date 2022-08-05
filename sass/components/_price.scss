@@ -1,0 +1,11 @@
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  /* identical to box height, or 29px */
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--btn-background-color);
+}

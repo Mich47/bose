@@ -26,6 +26,8 @@
 @import './components/project-card';
 @import './components/social';
 @import './components/mobile-menu';
+@import './components/line';
+@import './components/price';
 
 // Layouts
 @import './layouts/header';
@@ -34,6 +36,8 @@
 @import './layouts/features';
 @import './layouts/overviews';
 @import './layouts/faq';
+@import './layouts/order';
+@import './layouts/usage';
 
 // Hidden
 @import './utils/hidden';

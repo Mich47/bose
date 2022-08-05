@@ -1,0 +1,15 @@
+.usage {
+}
+
+.usage__container {
+  align-items: center;
+}
+
+.usage__image {
+  min-width: 280px;
+  min-height: 235px;
+  background-image: url('../images/usage/mob/img.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

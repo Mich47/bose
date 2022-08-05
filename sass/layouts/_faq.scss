@@ -1,5 +1,44 @@
+$color-background: rgb(255 255 255 / 0.1);
+
 .faq {
   &__list {
+    counter-reset: num;
     flex-direction: column;
+  }
+}
+
+.faq__text {
+  cursor: pointer;
+  display: flex;
+  justify-content: baseline;
+
+  &::before,
+  &::after {
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0.7;
+    /* identical to box height, or 14px */
+
+    color: var(--second-font-color);
+  }
+
+  &::before {
+    counter-increment: num;
+    content: counter(num, decimal-leading-zero);
+    margin-right: 16px;
+  }
+
+  &::after {
+    content: '?';
+    margin-left: 12px;
+    flex-shrink: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: $color-background;
+    border-radius: 50%;
   }
 }
